@@ -1,0 +1,26 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+ const b=await chromium.launch({executablePath:process.env.CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--single-process','--disable-gpu'],headless:true});
+ const pg=await b.newPage({viewport:{width:360,height:800},hasTouch:true,isMobile:true});
+ const errors=[];pg.on('pageerror',e=>errors.push(e.message));
+ await pg.goto('file://'+process.cwd()+'/app/index.html');const nav=s=>pg.locator('[data-tab="'+s+'"]').click();
+ await nav('people');await pg.locator('[data-mode="publications"]').click();
+ assert(await pg.locator('[data-ia="person"]').count()===9);
+ const trevor=pg.getByRole('button',{name:/Trevor Lanting/});
+ assert((await trevor.innerText()).includes('7 verified papers'));
+ await trevor.click();assert((await pg.locator('.ins-profile').innerText()).includes('Trevor'));
+ assert(await pg.locator('.ins-pubs a[href^="https://doi.org/"]').count()===7);
+ const cached=await pg.locator('.ins-profile img').evaluate(img=>[img.complete,img.naturalWidth]);assert(cached[0]&&cached[1]);
+ await nav('topics');await pg.locator('[data-ia="expand-topic"]').first().click();const seen=await pg.locator('.heat-detail').innerText();assert(seen.includes('appearances'));
+ await nav('planner');await pg.locator('[data-ifield="plan-day"]').selectOption('2026-11-17');const build=pg.locator('[data-ia="build"]');
+ assert(await build.isDisabled());await pg.locator('[data-ifield="keywords"]').fill('tokamak, SQUID');assert(await build.isEnabled());
+ await build.click();const labels=await pg.locator('.ins-match').allTextContents(), tt=await pg.locator('.ins-stops .ins-stop-title').allTextContents();
+ assert(labels.some(l=>l.toLowerCase().includes('tokamak')),JSON.stringify(labels));
+ assert(tt.some(t=>/TokaGLINT/i.test(t)));
+ await pg.reload();await nav('planner');assert(await pg.locator('[data-ifield="keywords"]').inputValue()==='tokamak, SQUID');
+ await pg.locator('[data-ifield="keywords"]').fill(' no-such-topic-37b8 ');await build.click();assert((await pg.locator('#ins-plan-results').innerText()).includes('No timed sessions fit'));
+ await pg.locator('[data-ifield="keywords"]').fill('');assert(await build.isDisabled());
+ assert.deepEqual(errors,[]);console.log(JSON.stringify({journalRows:9,trevorDOI:7,portraitWidth:cached[1],keywordMatch:tt,errors}));
+ await b.close();
+})().catch(e=>{console.error(e);process.exit(1);});

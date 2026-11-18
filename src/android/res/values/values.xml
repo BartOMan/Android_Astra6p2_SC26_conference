@@ -1,0 +1,10 @@
+<resources>
+    <color name="guide_green">#173E32</color>
+    <style name="GuideTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/guide_green</item>
+        <item name="android:navigationBarColor">@color/guide_green</item>
+        <item name="android:windowBackground">@color/guide_green</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">#245D46</item>
+    </style>
+</resources>

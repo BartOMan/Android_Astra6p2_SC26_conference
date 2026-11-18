@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173e32">
+  <title>SC26 Field Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="insights.css">
+  <script defer src="data.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="insights.js"></script>
+  <script defer src="maps.js"></script>
+  <script defer src="venue.js"></script>
+  <script defer src="calendar.js"></script>
+  <script defer src="ui.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to program</a>
+  <header class="mast"><div class="frame mast-inner">
+    <button type="button" id="home" aria-label="SC26 Field Guide home"><span class="brandmark">SC<span>26</span></span><span class="brandname">Field Guide</span></button>
+    <button type="button" class="mast-place" id="venue" aria-label="Open venue map"><span>Venue map <svg aria-hidden="true" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9 9 3M3 3h6v6"/></svg></span><span>McCormick Place</span></button>
+  </div></header>
+  <main id="main" tabindex="-1"><div class="frame"><p class="loading">Opening the conference program…</p></div></main>
+  <nav id="tabs" aria-label="Field guide sections"><div class="nav-inner"></div></nav>
+  <div id="veil" hidden><section id="sheet" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet-top"><span>SC26 / FIELD GUIDE</span><button type="button" class="icon-btn" id="close-sheet" aria-label="Close details">×</button></div>
+    <div id="sheet-content"></div>
+  </section></div>
+  <p id="notice" role="status" aria-live="polite"></p>
+</body>
+</html>

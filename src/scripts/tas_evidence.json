@@ -1,0 +1,146 @@
+{
+  "714234": [
+    {
+      "title": "Architectural Considerations in the Design of a Superconducting Quantum Annealing Processor",
+      "url": "https://doi.org/10.1109/tasc.2014.2318294",
+      "year": 2014,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "The South Pole Telescope SZ-Receiver Detectors",
+      "url": "https://doi.org/10.1109/tasc.2009.2018229",
+      "year": 2009,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "Thermal Design and Characterization of Transition-Edge Sensor (TES) Bolometers for Frequency-Domain Multiplexing",
+      "url": "https://doi.org/10.1109/tasc.2009.2018036",
+      "year": 2009,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "Frequency-Domain Multiplexed Readout for Superconducting Gamma-Ray Detectors",
+      "url": "https://doi.org/10.1109/tasc.2007.898249",
+      "year": 2007,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "Frequency-Domain SQUID Multiplexing of Transition-Edge Sensors",
+      "url": "https://doi.org/10.1109/tasc.2005.849921",
+      "year": 2005,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "A frequency-domain SQUID multiplexer for arrays of transition-edge superconducting sensors",
+      "url": "https://doi.org/10.1109/tasc.2003.813973",
+      "year": 2003,
+      "authorIndex": "https://openalex.org/A5089555006"
+    },
+    {
+      "title": "A frequency-domain read-out technique for large microcalorimeter arrays demonstrated using high-resolution γ-ray sensors",
+      "url": "https://doi.org/10.1109/tasc.2003.813981",
+      "year": 2003,
+      "authorIndex": "https://openalex.org/A5089555006"
+    }
+  ],
+  "395983": [
+    {
+      "title": "Anomalous Switching Curves in a dc SQUID Phase Qubit",
+      "url": "https://doi.org/10.1109/tasc.2010.2091470",
+      "year": 2010,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Dc SQUID Phase Qubit With an LC Filter",
+      "url": "https://doi.org/10.1109/tasc.2009.2019424",
+      "year": 2009,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Increasing Spectroscopic Coherence Times of a DC SQUID Phase Qubit by Operating Deeper in the Potential Well",
+      "url": "https://doi.org/10.1109/tasc.2007.897732",
+      "year": 2007,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Measurements of Decoherence in Three dc SQUID Phase Qubits",
+      "url": "https://doi.org/10.1109/tasc.2007.898124",
+      "year": 2007,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Pulse Current Measurements and Rabi Oscillations in a dc SQUID Phase Qubit",
+      "url": "https://doi.org/10.1109/tasc.2007.898561",
+      "year": 2007,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Strong-Field Effects in the Rabi Oscillations of the Superconducting Phase Qubit",
+      "url": "https://doi.org/10.1109/tasc.2007.898247",
+      "year": 2007,
+      "authorIndex": "https://openalex.org/A5079679780"
+    },
+    {
+      "title": "Cooper-Pair Box as a Variable Capacitor",
+      "url": "https://doi.org/10.1109/tasc.2005.850100",
+      "year": 2005,
+      "authorIndex": "https://openalex.org/A5079679780"
+    }
+  ],
+  "656483": [
+    {
+      "title": "Reducing Spontaneous Emission in Circuit Quantum Electrodynamics by a Combined Readout/Filter Technique",
+      "url": "https://doi.org/10.1109/tasc.2015.2456109",
+      "year": 2015,
+      "authorIndex": "https://openalex.org/A5061442100"
+    }
+  ],
+  "676914": [
+    {
+      "title": "Application of Hierarchical Matrices to Large-Scale Electromagnetic Field Analyses of Coils Wound With Coated Conductors",
+      "url": "https://doi.org/10.1109/tasc.2017.2780821",
+      "year": 2017,
+      "authorIndex": "https://openalex.org/A5090608549"
+    }
+  ],
+  "240893": [
+    {
+      "title": "Application of Hierarchical Matrices to Large-Scale Electromagnetic Field Analyses of Coils Wound With Coated Conductors",
+      "url": "https://doi.org/10.1109/tasc.2017.2780821",
+      "year": 2017,
+      "authorIndex": "https://openalex.org/A5042523389"
+    }
+  ],
+  "349434": [
+    {
+      "title": "Toward Increasing the Difficulty of Reverse Engineering of RSFQ Circuits",
+      "url": "https://doi.org/10.1109/tasc.2019.2901895",
+      "year": 2019,
+      "authorIndex": "https://openalex.org/A5066320524"
+    }
+  ],
+  "576434": [
+    {
+      "title": "An Integrated Deep-Cryogenic Temperature Sensor in CMOS Technology for Quantum Computing Applications",
+      "url": "https://doi.org/10.1109/tasc.2025.3536636",
+      "year": 2025,
+      "authorIndex": "https://openalex.org/A5070143479"
+    }
+  ],
+  "376434": [
+    {
+      "title": "An Integrated Deep-Cryogenic Temperature Sensor in CMOS Technology for Quantum Computing Applications",
+      "url": "https://doi.org/10.1109/tasc.2025.3536636",
+      "year": 2025,
+      "authorIndex": "https://openalex.org/A5046281066"
+    }
+  ],
+  "860783": [
+    {
+      "title": "High Noise Margin, Digital Logic Design Using Josephson Junction Field-Effect Transistors for Cryogenic Computing",
+      "url": "https://doi.org/10.1109/tasc.2021.3054347",
+      "year": 2021,
+      "authorIndex": "https://openalex.org/A5003048953"
+    }
+  ]
+}
